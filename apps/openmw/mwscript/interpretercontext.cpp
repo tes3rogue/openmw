@@ -210,7 +210,12 @@ namespace MWScript
 
     bool InterpreterContext::menuMode()
     {
+        /* Disabled by tes3rogue, because being in a menu should not pause scripts in it
+
         return MWBase::Environment::get().getWindowManager()->isGuiMode();
+        */
+
+        return false;
     }
 
     int InterpreterContext::getGlobalShort (const std::string& name) const
